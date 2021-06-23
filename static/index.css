@@ -32,6 +32,13 @@ main {
   border: 1px dotted green;
   border-radius: 4px;
 }
+.title {
+  background: rgb(0, 119, 255);
+  padding: 0.5rem;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
 .downloads {
   margin: 1.5rem;
   padding: 1rem;
@@ -53,12 +60,4 @@ li {
 li:hover {
   background: grey;
   color: white;
-}
-
-.title {
-  background: rgb(0, 119, 255);
-  padding: 0.5rem;
-  margin: 0;
-  color: white;
-  text-align: center;
 }
