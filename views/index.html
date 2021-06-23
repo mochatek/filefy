@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/index.css">
-    <title>AWS Test</title>
+    <title>Filefy</title>
 </head>
 <body>
     <header>
@@ -15,14 +15,14 @@
         <div class="container">
             <div class="upload">
                 <input type="file" name="file" id="file">
+                <button id="btn-upload">Upload</button>
             </div>
             <h3 class="title">Downloads</h3>
             <div class="downloads">
-                <ul>
-                    <li>📁 index.js</li>
-                    <li>📁 favicon.ico</li>
-                    <li>📁 style.css</li>
-                    <li>📁 index.html</li>
+                <ul id="download-list">
+                    {% for file in files %}
+                    <li><a href="https://{{s3_bucket}}.s3.amazonaws.com/{{ file }}" target="_blank">📁 {{ file }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>

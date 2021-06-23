@@ -32,6 +32,23 @@ main {
   border: 1px dotted green;
   border-radius: 4px;
 }
+button {
+  background: lightgreen;
+  color: black;
+  border: 1px solid green;
+  outline: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+button:hover {
+  background: green;
+  color: white;
+  border: 1px solid black;
+}
+button:disabled {
+  background: grey;
+  color: white;
+}
 .title {
   background: rgb(0, 119, 255);
   padding: 0.5rem;
@@ -60,4 +77,8 @@ li {
 li:hover {
   background: grey;
   color: white;
+}
+a {
+  text-decoration: none;
+  color: blue;
 }
